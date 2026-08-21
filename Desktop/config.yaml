@@ -4,7 +4,7 @@
 #              Clicking the 3DS touch screen triggers a left or right thumbstick click.
 # "keyboard" : Send keypresses with the console's buttons and mouse clicks with the touch screen.
 #              Make sure to configure KEYBOARD_CONFIG.
-CONTROLLER_TYPE: "keyboard"
+CONTROLLER_TYPE: "gamepad"
 
 # The key to press to exit the desktop application properly.
 EXIT: "escape"
@@ -19,26 +19,26 @@ TIMEOUT: 0.5
 # Keys can be left empty. They will have no effect.
 KEYBOARD_CONFIG:
     # Face buttons
-    A: "l"
-    B: "m"
-    X: "k"
-    Y: "j"
+    A: "a"
+    B: "b"
+    X: "x"
+    Y: "y"
 
     # Shoulder buttons / triggers
-    L: "h"
-    R: "space"
-    ZL: ""
-    ZR: ""
+    L: "l"
+    R: "r"
+    ZL: "q"
+    ZR: "e"
 
     # Start / Select
     START: "enter"
     SELECT: "escape"
 
     # D-Pad
-    DPAD_UP: "z"
-    DPAD_DOWN: "s"
-    DPAD_LEFT: "q"
-    DPAD_RIGHT: "d"
+    DPAD_UP: "up"
+    DPAD_DOWN: "down"
+    DPAD_LEFT: "left"
+    DPAD_RIGHT: "right"
 
     # Sensitivity of the mouse movement driven by the touch screen.
     # 1.00 = normal, 2.00 = twice as fast, 0.50 = half as fast.
