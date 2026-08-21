@@ -1,0 +1,74 @@
+# The type of the controller.
+# Possible values: "gamepad" | "keyboard"
+# "gamepad"  : Use the console as an emulated Gamepad.
+#              Clicking the 3DS touch screen triggers a left or right thumbstick click.
+# "keyboard" : Send keypresses with the console's buttons and mouse clicks with the touch screen.
+#              Make sure to configure KEYBOARD_CONFIG.
+CONTROLLER_TYPE: "keyboard"
+
+# The key to press to exit the desktop application properly.
+EXIT: "escape"
+
+# Time (in seconds) after which the program considers the console disconnected
+# and displays a warning.
+TIMEOUT: 0.5
+
+# Configuration of the keyboard mode.
+# Each entry below maps a console button to a keyboard key.
+# Check possible keyboard keys at the end of the config file.
+# Keys can be left empty. They will have no effect.
+KEYBOARD_CONFIG:
+    # Face buttons
+    A: "l"
+    B: "m"
+    X: "k"
+    Y: "j"
+
+    # Shoulder buttons / triggers
+    L: "h"
+    R: "space"
+    ZL: ""
+    ZR: ""
+
+    # Start / Select
+    START: "enter"
+    SELECT: "escape"
+
+    # D-Pad
+    DPAD_UP: "z"
+    DPAD_DOWN: "s"
+    DPAD_LEFT: "q"
+    DPAD_RIGHT: "d"
+
+    # Sensitivity of the mouse movement driven by the touch screen.
+    # 1.00 = normal, 2.00 = twice as fast, 0.50 = half as fast.
+    TOUCH_SENSITIVITY: 2.00
+
+    # Determines how mouse clicks are triggered.
+    # Possible values: "classic" | "multiple"
+    # "classic"  : The touch screen moves the mouse cursor. Touching the screen triggers
+    #              a left click, released when the touch screen is released.
+    # "multiple" : The touch screen only moves the mouse cursor. Clicks are triggered with
+    #              the C-Pad instead: left = left click, right = right click, up = middle click.
+    CLICK_MODE: "classic"
+
+    # Manual screen scale override (Linux only).
+    # On Windows this is detected automatically, but Linux's DPI/scaling handling
+    # varies across desktop environments (X11/Wayland), so if the mouse position
+    # doesn't line up with your actual screen resolution, adjust this value manually.
+    # 1.00 = no scaling (100%), 1.25 = 125% scaling, etc.
+    LINUX_SCREEN_SCALE: 1.00
+
+
+
+# Possible keyboard keys.
+# You must set them in lowercase.
+# "a"   "b"   "c"   "d"   "e"   "f"   "g"   "h"   "i"   "j"   "k"   "l"   "m"
+# "n"   "o"   "p"   "q"   "r"   "s"   "t"   "u"   "v"   "w"   "x"   "y"   "z"
+# "0"   "1"   "2"   "3"   "4"   "5"   "6"   "7"   "8"   "9"   "numlock"
+# "f1"  "f2"  "f3"  "f4"  "f5"  "f6"  "f7"  "f8"  "f9"  "f10" "f11  "f12"
+# "enter"       "escape"      "space"         "delete"   "backspace"   "tab"   "capslock"
+# "shift"       "left shift"    "right shift",
+# "control"     "left control"  "right control",
+# "alt"         "alt gr",
+# "up_arrow"    "down_arrow"    "left_arrow"        "right_arrow"

@@ -1,0 +1,8 @@
+vgamepad; sys_platform == 'win32'
+python-uinput; sys_platform == 'linux'
+mouse
+keyboard
+screeninfo
+pyyaml
+pydantic
+colorama
